@@ -1,5 +1,9 @@
 
-console.log(`Hello there! ~General Kenobi~`); // I put tilda's around to let people know it's the person how said it. This however also put the  following error in the browser's console: no eval # 253a60ab-5554-4f6b-80ce-9dfe38617dd4
+console.log(`Hello there! ~General Kenobi~`);
+/*
+I put tilda's around to let people know it's the person how said it.
+This however also put the following error in the browser's console:
+no eval # 253a60ab-5554-4f6b-80ce-9dfe38617dd48 */
 
 
 console.log('#'.repeat(77));

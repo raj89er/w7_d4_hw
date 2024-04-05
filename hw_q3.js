@@ -7,6 +7,11 @@ console.log('#'.repeat(77));
 // Add a click event listener to your button that will change the background color of the body
 // The background should toggle between at least 2 colors
 
+const body = document.querySelector('body');
+const button = document.createElement('button');
 
+button.id = 'backgroundChanger';
+button.textContent = 'Change Background';
 
+body.appendChild(button);
 
