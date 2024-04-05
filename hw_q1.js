@@ -1,6 +1,10 @@
 
 console.log(`Hello there! ~General Kenobi~`); // I put tilda's around to let people know it's the person how said it. This however also put the  following error in the browser's console: no eval # 253a60ab-5554-4f6b-80ce-9dfe38617dd4
 
+
+console.log('#'.repeat(77));
+console.log('Question 1');
+console.log('#'.repeat(77));
 // Exercise 1
 /*
 Banking System
@@ -95,54 +99,10 @@ console.table(samplechecking);
 
 console.log('#'.repeat(77));
 
-
 const samplesaving  = new SavingsAccount(987654321, 5000, 'Jane Smith', 5);
 console.table(samplesaving);
 samplesaving.deposit(1000);
 samplesaving.addInterest();
 samplesaving.withdraw(2000)
 console.table(samplesaving);
-
-// Exercise 2 - Promises 
-// Using the below getMovieInfo function, which is a Promised-base function, write an asynchronous function (.then().catch() or async/await)
-// called printMovieInfo that will take in a movie title and then either displays the movie information or logs an error with a console.warn().
-
-
-function getMovieInfo(movieName){
-    return new Promise((resolve, reject) => {
-        if (movieName.length > 5){
-            let movie = {
-                id: 123,
-                title: movieName,
-                director: 'Christopher Spielberg',
-                runtime: 157,
-                description: 'Good vs Evil'
-            }
-            resolve(movie)
-        } else {
-            reject(`${movieName} cannot be accessed because it is too short.`)
-        }
-    })
-}
-
-function printMovieInfo(){};
-
-// Example 1
-printMovieInfo('Indiana Jones and the Dark Knight')
-// Output: Indiana Jones and the Dark Knight directed by Christopher Spielberg. A story of Good vs Evil that runs for 157 minutes.
-
-// Example 2
-printMovieInfo('ET')
-// Output: *Warning* ET cannot be accessed because it it too short
-
-
-
-
-// Exercise 3
-// Add a Button somewhere on your index.html page with an id "backgroundChanger"
-// Add a click event listener to your button that will change the background color of the body
-// The background should toggle between at least 2 colors
-
-
-
 
